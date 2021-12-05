@@ -1,0 +1,144 @@
+:root {
+  --primary-color: #ffffff;
+  --text-primary: #000000;
+  --text-secondary: #6c757d;
+}
+
+[data-theme='dark'] {
+  --primary-color: #000000;
+  --text-primary: #ffffff;
+}
+
+// Font
+@font-face {
+  font-family: 'Nunito';
+  src: url('../font/nunito.regular.ttf');
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  font-family: 'Nunito';
+  overflow-x: hidden;
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: inherit;
+      opacity: 0.8;
+    }
+  }
+  main {
+    margin-top: 5em;
+  }
+  .offcanvas li a {
+    font-size: 2em !important;
+  }
+  button {
+    &:focus,
+    &:active {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
+// .toggle-button {
+//   -webkit-appearance: none;
+//   outline: none;
+//   width: 200px;
+//   height: 100px;
+//   background-color: #212121;
+//   border-radius: 50px;
+//   position: relative;
+//   transition: 0.4s;
+//   &:before {
+//     content: '';
+//     position: absolute;
+//     height: 100px;
+//     width: 100px;
+//     border-radius: 50px;
+//     top: 0;
+//     bottom: 0;
+//     background-color: #bdbdbd;
+//     transition: 0.4s;
+//   }
+//   &:checked {
+//     background-color: #bdbdbd;
+//   }
+//   &:checked:before {
+//     transform: translate(100%);
+//     background-color: #212121;
+//     transition: 0.4s;
+//   }
+// }
+
+// home start
+.home {
+  max-height: 100%;
+  min-height: 46.7em;
+  img {
+    width: 100%;
+    max-width: 29em;
+    height: 29em;
+  }
+  h1 {
+    font-size: 4em;
+    font-weight: 800;
+  }
+}
+
+// about me start
+.about {
+  margin-top: 6em;
+  h1 {
+    font-size: 4em;
+    font-weight: 800;
+  }
+}
+
+// my services start
+.services {
+  margin-top: 6em;
+  h1 {
+    font-size: 4em;
+    font-weight: 800;
+  }
+}
+
+// my project start
+.project {
+  h1 {
+    font-size: 4em;
+    font-weight: 800;
+  }
+  .col-sm-3 {
+    .card {
+      height: 14em;
+      margin-bottom: 1em;
+      img {
+        border-radius: 0.2em 0.2em 0 0;
+        width: 100%;
+        margin-bottom: 1em;
+        border-radius: 0.3em;
+        height: 8em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offcanvas {
+    width: 80%;
+  }
+  // language start
+  .language {
+    .col-1 {
+      margin-right: 0.7em;
+      svg {
+        width: 2.5em;
+        height: 2.5em;
+      }
+    }
+  }
+}

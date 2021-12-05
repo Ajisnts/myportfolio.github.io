@@ -1,0 +1,112 @@
+:root {
+  --primary-color: #ffffff;
+  --text-primary: #000000;
+  --text-secondary: #6c757d;
+}
+
+[data-theme='dark'] {
+  --primary-color: #000000;
+  --text-primary: #ffffff;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../font/nunito.regular.ttf");
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  font-family: 'Nunito';
+  overflow-x: hidden;
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body a:hover {
+  color: inherit;
+  opacity: 0.8;
+}
+
+body main {
+  margin-top: 5em;
+}
+
+body .offcanvas li a {
+  font-size: 2em !important;
+}
+
+body button:focus, body button:active {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.home {
+  max-height: 100%;
+  min-height: 46.7em;
+}
+
+.home img {
+  width: 100%;
+  max-width: 29em;
+  height: 29em;
+}
+
+.home h1 {
+  font-size: 4em;
+  font-weight: 800;
+}
+
+.about {
+  margin-top: 6em;
+}
+
+.about h1 {
+  font-size: 4em;
+  font-weight: 800;
+}
+
+.services {
+  margin-top: 6em;
+}
+
+.services h1 {
+  font-size: 4em;
+  font-weight: 800;
+}
+
+.project h1 {
+  font-size: 4em;
+  font-weight: 800;
+}
+
+.project .col-sm-3 .card {
+  height: 14em;
+  margin-bottom: 1em;
+}
+
+.project .col-sm-3 .card img {
+  border-radius: 0.2em 0.2em 0 0;
+  width: 100%;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  height: 8em;
+}
+
+@media screen and (max-width: 768px) {
+  .offcanvas {
+    width: 80%;
+  }
+  .language .col-1 {
+    margin-right: 0.7em;
+  }
+  .language .col-1 svg {
+    width: 2.5em;
+    height: 2.5em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
